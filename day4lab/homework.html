@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Feature Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="text-info">Our models</h1>
+        <div class="card-columns">
+            <div class="card bg-secondary" style="padding: 20px;">
+                <h4 class="card-title text-primary">BMW M3</h4>
+                <img class="card-img-top" src="m3.jpeg" alt="BMW M3" style="width: 100%; max-width:200px; height: 150px;">
+                <div class="card-body">
+                    <p class="card-text">Epic performance, driver-focused technology, and thrilling design: every aspect of the 3 Series M Sedans reflect their motorsport pedigree. Every model delivers an adrenaline-charged drive for performance enthusiasts like you.<a href="#">Read more...</a></p>
+                    <div class ="dropdown">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Actions</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Buy</a>
+                            <a class="dropdown-item" href="#">Compare</a>
+                            <a class="dropdown-item" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-secondary" style="padding: 20px;">
+                <h4 class="card-title text-primary">BMW M5</h4>
+                <img class="card-img-top" src="m5.jpeg" alt="BMW M5" style="width: 100%; max-width:200px; height: 150px;">
+                <div class="card-body">
+                    <p class="card-text">The BMW M5 has a 2.0-litre turbo-hybrid powertrain. A thoroughbred M, filled to the brim with performance features, aggressive styling, and a myriad of M-specific elements in a sleeper four-door sedan package. <a href="##">Read more...</a></p>
+                    <div class ="dropdown">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Actions</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Buy</a>
+                            <a class="dropdown-item" href="#">Compare</a>
+                            <a class="dropdown-item" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-secondary" style="padding: 20px;">
+                <h4 class="card-title text-primary">BMW M6</h4>
+                <img class="card-img-top" src="m6.jpeg" alt="BMW M6" style="width: 100%; max-width:200px; height: 150px;">
+                <div class="card-body">
+                    <p class="card-text">BMW M6 Coupé blended the unmistakable M feeling with a luxurious presence and a fascinatingly aesthetic body design in the classic proportions of a coupé. The now legendary S63 engine delivers 560 hp.<a href="#">Read more...</a></p>
+                    <div class ="dropdown">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Actions</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Buy</a>
+                            <a class="dropdown-item" href="#">Compare</a>
+                            <a class="dropdown-item" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Frequently Asked Questions</h2>
+        <div id = "accordion">
+            <div class = "card">
+                <div class = "card-header">
+                    <a class = "card-link" data-toggle = "collapse" href = "#collapseOne">
+                        How are the service intervals calculated?
+                    </a>
+                </div>
+                <div id = "collapseOne" class = "collapse show" data-parent = "#accordion">
+                    <div class = "card-body">
+                        For your BMW, service is not routinely performed at fixed intervals. Instead, it is based on actual vehicle use (number of cold starts, driving habits, type of driving: urban traffic, motorway, etc.). With "Condition Based Services" (CBS), the condition of your BMW is monitored by sensors and special algorithms. For a new vehicle, a theoretical date will be set for the first service, which will be adjusted as your vehicle is used. You will only be notified in the event of a required service.
+                    </div>
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "card-header">
+                    <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseTwo">
+                        Is it possible to delete all stored destinations in navigation?
+                    </a>
+                </div>
+                <div id = "collapseTwo" class = "collapse" data-parent = "#accordion">
+                    <div class = "card-body">
+                        To delete all stored navigation destinations in the navigation system of your BMW with Operating System 7, select: "NAV" > "My destinations" and mark an entry. Press the "Option" button on the right side under the iDrive Controller and confirm "Delete entire list".
+                    </div>
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "card-header">
+                    <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseThree">
+                        What to do if there is a breakdown?
+                    </a>
+                </div>
+                <div id = "collapseThree" class = "collapse" data-parent = "#accordion">
+                    <div class = "card-body">
+                        In the event of a breakdown or accident, you can call BMW Roadside Assistance using the My BMW App. Select "Call Roadside Assistance" from the "Vehicle" or "Profile" tab. The location, status and VIN of your vehicle will be transferred to the service employee. Depending on availability in your country, the My BMW App shows you the processing status of your case and the position of the BMW Service Vehicle on its way to you.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
