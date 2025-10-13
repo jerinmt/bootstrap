@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Borma Online</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
+    <div class="container-sm bg-secondary">
+        <h2 class="text-warning ml-5">Borma Online Bakery welcomes your feedback</h2>
+        <form>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="feedback">Feedback Message:</label>
+                        <textarea class="form-control" rows="5" id="feedback"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm">Preferred Contact:
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input "name="optradio">Email
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input"name="optradio" >Phone
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="range">Satisfaction level (1-10):</label>
+                        <input type="range" class="form-control-range" name="range" id="range" min="1" max="10">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="selList">Type of order:</label>
+                        <select class="form-control" id="selList">
+                            <option>Cake</option>
+                            <option>Cookies</option>
+                            <option>Pastry</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button type="submit" class="btn btn-primary btn-block my-2">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
